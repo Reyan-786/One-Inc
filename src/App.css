@@ -169,7 +169,10 @@ body {
     font-size: 14px;
   }
 }
-
+.team-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .team-section h2 { 
   font-size: 60px;
   text-align: center;
@@ -196,14 +199,30 @@ body {
 }
 
 .member-content {
-  position: relative; 
+  display: flex;
+  justify-content: center;
 }
+.member-info .Member-Name {
+  color: black;
+  margin-right: 10px;
+}
+
+.Team-Container {
+  margin-top:30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
 
 .member-info {
   display: none; 
   justify-content: center; 
   align-items: center; 
   font-weight: bold;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -217,13 +236,13 @@ body {
   transition: opacity 0.5s; 
 }
 
-
 .team-member:hover .team-img {
   opacity: 0.7; 
 }
 
 .team-member:hover .member-info {
-  display: inline; 
+  display: flex; 
+  justify-content: center;
   opacity: 1; 
 }
 /* -------------------------------------- */
